@@ -1,0 +1,42 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar{
+    flex: 0.3;
+    height: 83.5vh;
+    max-height: 2000px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.preview{
+    flex: 0.7;
+    height: 83.5vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+@media only screen and (min-width: 1920px) {
+    .sidebar {
+        height: 85.5vh;
+    }
+
+    .preview {
+        height: 85.5vh;
+    }
+}
